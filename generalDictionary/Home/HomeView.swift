@@ -21,6 +21,7 @@ class HomeView: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        //se oculto la barra de navegacion
         self.navigationController?.isNavigationBarHidden = true
     }
 }

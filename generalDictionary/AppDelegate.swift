@@ -20,7 +20,9 @@ var window: UIWindow?
         window?.rootViewController = navigation
         window?.makeKeyAndVisible() //para hacerla la principal y visible
         
+        //instancia la vista a la que se va a llamar
         let vc = HomeMain.createModule(navigation: navigation)
+        //se le hace push (se visualiza la vista)
         navigation.pushViewController(vc, animated: true)
         return true
     }
