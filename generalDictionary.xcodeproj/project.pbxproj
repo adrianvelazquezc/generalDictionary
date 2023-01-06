@@ -25,6 +25,14 @@
 		CEAA5E4F2967AAC700049358 /* AppDelegateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E472967AAC700049358 /* AppDelegateInteractor.swift */; };
 		CEAA5E502967AAC700049358 /* AppDelegateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E482967AAC700049358 /* AppDelegateView.swift */; };
 		CEAA5E512967AAC700049358 /* AppDelegateEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E492967AAC700049358 /* AppDelegateEntity.swift */; };
+		CEAA5E5D2968727000049358 /* ScrollViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E552968727000049358 /* ScrollViewUI.swift */; };
+		CEAA5E5E2968727000049358 /* ScrollPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E562968727000049358 /* ScrollPresenter.swift */; };
+		CEAA5E5F2968727000049358 /* ScrollRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E572968727000049358 /* ScrollRouter.swift */; };
+		CEAA5E602968727000049358 /* ScrollProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E582968727000049358 /* ScrollProtocols.swift */; };
+		CEAA5E612968727000049358 /* ScrollMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E592968727000049358 /* ScrollMain.swift */; };
+		CEAA5E622968727000049358 /* ScrollInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E5A2968727000049358 /* ScrollInteractor.swift */; };
+		CEAA5E632968727000049358 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E5B2968727000049358 /* ScrollView.swift */; };
+		CEAA5E642968727000049358 /* ScrollEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E5C2968727000049358 /* ScrollEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +56,14 @@
 		CEAA5E472967AAC700049358 /* AppDelegateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateInteractor.swift; sourceTree = "<group>"; };
 		CEAA5E482967AAC700049358 /* AppDelegateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateView.swift; sourceTree = "<group>"; };
 		CEAA5E492967AAC700049358 /* AppDelegateEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateEntity.swift; sourceTree = "<group>"; };
+		CEAA5E552968727000049358 /* ScrollViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewUI.swift; sourceTree = "<group>"; };
+		CEAA5E562968727000049358 /* ScrollPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPresenter.swift; sourceTree = "<group>"; };
+		CEAA5E572968727000049358 /* ScrollRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRouter.swift; sourceTree = "<group>"; };
+		CEAA5E582968727000049358 /* ScrollProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollProtocols.swift; sourceTree = "<group>"; };
+		CEAA5E592968727000049358 /* ScrollMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMain.swift; sourceTree = "<group>"; };
+		CEAA5E5A2968727000049358 /* ScrollInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollInteractor.swift; sourceTree = "<group>"; };
+		CEAA5E5B2968727000049358 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		CEAA5E5C2968727000049358 /* ScrollEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +131,7 @@
 		CEAA5E402967AA9800049358 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEAA5E542968720B00049358 /* Scroll */,
 				CEAA5E412967AAA900049358 /* AppDelegate */,
 			);
 			path = Views;
@@ -133,6 +150,21 @@
 				CEAA5E492967AAC700049358 /* AppDelegateEntity.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CEAA5E542968720B00049358 /* Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA5E552968727000049358 /* ScrollViewUI.swift */,
+				CEAA5E562968727000049358 /* ScrollPresenter.swift */,
+				CEAA5E572968727000049358 /* ScrollRouter.swift */,
+				CEAA5E582968727000049358 /* ScrollProtocols.swift */,
+				CEAA5E592968727000049358 /* ScrollMain.swift */,
+				CEAA5E5A2968727000049358 /* ScrollInteractor.swift */,
+				CEAA5E5B2968727000049358 /* ScrollView.swift */,
+				CEAA5E5C2968727000049358 /* ScrollEntity.swift */,
+			);
+			path = Scroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,18 +238,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAA5E3429678B9400049358 /* HomePresenter.swift in Sources */,
+				CEAA5E642968727000049358 /* ScrollEntity.swift in Sources */,
+				CEAA5E5E2968727000049358 /* ScrollPresenter.swift in Sources */,
 				CEAA5E3729678B9400049358 /* HomeMain.swift in Sources */,
+				CEAA5E612968727000049358 /* ScrollMain.swift in Sources */,
 				CEAA5E4D2967AAC700049358 /* AppDelegateProtocols.swift in Sources */,
 				CEAA5E3629678B9400049358 /* HomeProtocols.swift in Sources */,
 				CEAA5E3529678B9400049358 /* HomeRouter.swift in Sources */,
 				CEAA5E3C29678E0500049358 /* MainListTableViewCell.swift in Sources */,
 				CEAA5E4E2967AAC700049358 /* AppDelegateMain.swift in Sources */,
+				CEAA5E622968727000049358 /* ScrollInteractor.swift in Sources */,
 				CEAA5E17296780F000049358 /* AppDelegate.swift in Sources */,
+				CEAA5E632968727000049358 /* ScrollView.swift in Sources */,
 				CEAA5E3929678B9400049358 /* HomeView.swift in Sources */,
+				CEAA5E5D2968727000049358 /* ScrollViewUI.swift in Sources */,
 				CEAA5E4F2967AAC700049358 /* AppDelegateInteractor.swift in Sources */,
+				CEAA5E602968727000049358 /* ScrollProtocols.swift in Sources */,
 				CEAA5E3329678B9400049358 /* HomeViewUI.swift in Sources */,
 				CEAA5E512967AAC700049358 /* AppDelegateEntity.swift in Sources */,
 				CEAA5E4A2967AAC700049358 /* AppDelegateViewUI.swift in Sources */,
+				CEAA5E5F2968727000049358 /* ScrollRouter.swift in Sources */,
 				CEAA5E4B2967AAC700049358 /* AppDelegatePresenter.swift in Sources */,
 				CEAA5E502967AAC700049358 /* AppDelegateView.swift in Sources */,
 				CEAA5E4C2967AAC700049358 /* AppDelegateRouter.swift in Sources */,

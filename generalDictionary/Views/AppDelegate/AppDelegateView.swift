@@ -17,19 +17,19 @@ class AppDelegateView: UIViewController {
     override func loadView() {
         ui = AppDelegateViewUI(
             navigation: self.navigationController!,
-            delegate: self,
-            vcTitle: self.vcTitle ?? ""
+            delegate: self
         )
         view = ui
     }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        .darkContent
+//    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+//        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.title = vcTitle
+        self.navigationController?.navigationBar.standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.link]
         self.navigationController?.isNavigationBarHidden = false
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
     }
 }
 

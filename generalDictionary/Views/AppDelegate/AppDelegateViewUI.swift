@@ -15,7 +15,6 @@ protocol AppDelegateViewUIDelegate {
 class AppDelegateViewUI: UIView{
     var delegate: AppDelegateViewUIDelegate?
     var navigationController: UINavigationController?
-    var vcTitle: String?
     
     
     private lazy var infoLabel: UILabel = {
@@ -24,6 +23,7 @@ class AppDelegateViewUI: UIView{
         label.textAlignment = .left
         label.text = "Es un fichero, podemos encontrar las propiedades iniciales de la app y unas funciones que vienen establecidas por defecto. \n \nLas funciones que encontramos allí están relacionadas con varios aspectos. La primera es una función para poder iniciar la app, es decir, está destinada a ejecutarse cuando se entra a la app; lo que quiere decir que es un espacio para añadir las configuraciones que se realicen al abrirla.  \n \nLas otras funciones que se encuentran en AppDelegate son especiales para conectarse con el fichero de SceneDelegate, que, en pocas palabras, se puede definir como el espacio donde se controla la primera pantalla que se ve en la aplicación y cuando esta pasa de primer a segundo plano y viceversa. "
         label.numberOfLines = 0
+        label.textColor = .black
         return label
     }()
     
@@ -33,18 +33,17 @@ class AppDelegateViewUI: UIView{
         label.textAlignment = .left
         label.text = "var window: UIWindow? \n \nlet navigation = UINavigationController()\n \nwindow = UIWindow(frame: UIScreen.main.bounds)\n window?.rootViewController = navigation\n window?.makeKeyAndVisible() //para hacerla la principal y visible\n //instancia la vista a la que se va a llamar\n let vc = HomeMain.createModule(navigation: navigation)\n //se le hace push (se visualiza la vista)\n navigation.pushViewController(vc, animated: true)\nreturn true"
         label.numberOfLines = 0
+        label.textColor = .black
         return label
     }()
     
     
     public convenience init(
         navigation: UINavigationController,
-        delegate: AppDelegateViewUIDelegate,
-        vcTitle: String){
+        delegate: AppDelegateViewUIDelegate){
             self.init()
             self.delegate = delegate
             self.navigationController = navigation
-            self.vcTitle = vcTitle
             
             
             setUI()
@@ -60,7 +59,7 @@ class AppDelegateViewUI: UIView{
     }
     
     func setUI(){
-        self.backgroundColor = .link
+        self.backgroundColor = .white
         self.addSubview(infoLabel)
         self.addSubview(exampleLabel)
     }

@@ -43,8 +43,9 @@ class HomeViewUI: UIView{
             self.init()
             self.delegate = delegate
             self.navigationController = navigation
-            
+            //lista de los elementos
             elementList.append(List(title: "¿Como configurar el appDelegate?", viewController: AppDelegateMain.createModule(navigation: navigation, vcTitle: "Definir appDelegate")))
+            elementList.append(List(title: "¿Como hacer que la pantalla cresca si no cabe en la pantalla?", viewController: ScrollMain.createModule(navigation: navigation, vcTitle: "ScrollView")))
             
             setUI()
             setConstraints()
