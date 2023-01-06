@@ -45,6 +45,7 @@ class HomeViewUI: UIView{
             self.navigationController = navigation
             //lista de los elementos
             elementList.append(List(title: "¿Como configurar el appDelegate?", viewController: AppDelegateMain.createModule(navigation: navigation, vcTitle: "Definir appDelegate")))
+            elementList.append(List(title: "¿Que es un control? y ¿Como definirlos?", viewController: ControllersMain.createModule(navigation: navigation, vcTitle: "Controles")))
             elementList.append(List(title: "¿Como posicionar los elementos en la vista?", viewController: ConstrainsMain.createModule(navigation: navigation, vcTitle: "Constrains")))
             elementList.append(List(title: "¿Como hacer que la pantalla cresca si no cabe en la pantalla?", viewController: ScrollMain.createModule(navigation: navigation, vcTitle: "ScrollView")))
             
