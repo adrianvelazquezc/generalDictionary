@@ -8,7 +8,6 @@
 import Foundation
 
 class HomePresenter {
-    var interactor: HomeInteractorProtocol?
     weak var view: HomeViewProtocol?
     var router: HomeRouterProtocol?
 }
@@ -16,5 +15,9 @@ class HomePresenter {
 
 
 extension HomePresenter: HomePresenterProtocol {
+    func requestNextView(view: List) {
+        self.router?.navigateNextView(view: view)
+    }
+    
     
 }

@@ -15,6 +15,7 @@ class MainListTableViewCell: UITableViewCell {
         let label = UILabel()
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
         return label
     }()
 
@@ -35,6 +36,7 @@ class MainListTableViewCell: UITableViewCell {
     
     fileprivate func setupUIElements() {
         self.addSubview(titleLabel)
+        self.backgroundColor = .white
     }
     
     fileprivate func setupConstraints() {
@@ -42,6 +44,7 @@ class MainListTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             self.titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
             self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
+            self.titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
             self.titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5),
             self.titleLabel.heightAnchor.constraint(equalToConstant: 50),
         ])

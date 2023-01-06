@@ -9,15 +9,16 @@ import Foundation
 import UIKit
 
 protocol HomeViewUIDelegate {
-    
+    func gotoView(view: List)
 }
 
 class List {
     var title: String
+    var viewController: UIViewController
     
-    
-    init(title: String) {
+    init(title: String, viewController: UIViewController) {
         self.title = title
+        self.viewController = viewController
     }
 }
 class HomeViewUI: UIView{
@@ -27,11 +28,12 @@ class HomeViewUI: UIView{
     var elementList: [List] = []
     
     public lazy var tableView: UITableView = {
-       let tableView = UITableView()
+        let tableView = UITableView()
         tableView.register(MainListTableViewCell.self, forCellReuseIdentifier: MainListTableViewCell.identifier)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.backgroundColor = .white
         return tableView
     }()
     
@@ -42,7 +44,7 @@ class HomeViewUI: UIView{
             self.delegate = delegate
             self.navigationController = navigation
             
-            elementList.append(List(title: "Definir appDelegate"))
+            elementList.append(List(title: "¿Como configurar el appDelegate?", viewController: AppDelegateMain.createModule(navigation: navigation, vcTitle: "Definir appDelegate")))
             
             setUI()
             setConstraints()
@@ -63,7 +65,7 @@ class HomeViewUI: UIView{
     
     func setConstraints(){
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
@@ -80,5 +82,60 @@ extension HomeViewUI: UITableViewDelegate, UITableViewDataSource{
         cell.titleLabel.text = "\(elementList[indexPath.row].title)"
         return cell
     }
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // deslizar izquierda a derecha para abrir las opciones de swipe
+        let openSlide = UIContextualAction(style: .normal,
+                                           title: "Abrir") { [weak self] (action, view, completionHandler) in
+            self?.openViewController(index: indexPath.row)
+            completionHandler(true)
+        }
+        openSlide.backgroundColor = .systemGreen
+        
+        // Cerrar action
+        let closeSlide = UIContextualAction(style: .destructive,
+                                            title: "Cerrar") { [weak self] (action, view, completionHandler) in
+            self?.closeSlide()
+            completionHandler(true)
+        }
+        closeSlide.backgroundColor = .systemRed
+        
+        let configuration = UISwipeActionsConfiguration(actions: [closeSlide, openSlide])
+        return configuration
+    }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // deslizar derecha a izquierda para abrir las opciones de swipe
+        let openSlide = UIContextualAction(style: .normal,
+                                           title: "Abrir") { [weak self] (action, view, completionHandler) in
+            self?.openViewController(index: indexPath.row)
+            completionHandler(true)
+        }
+        openSlide.backgroundColor = .systemGreen
+        
+        // Trash action
+        let closeSlide = UIContextualAction(style: .destructive,
+                                            title: "Cerrar") { [weak self] (action, view, completionHandler) in
+            self?.closeSlide()
+            completionHandler(true)
+        }
+        closeSlide.backgroundColor = .systemRed
+        
+        let configuration = UISwipeActionsConfiguration(actions: [closeSlide, openSlide])
+        return configuration
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.delegate?.gotoView(view: self.elementList[indexPath.row])
+    }
+    
+    //tanleview delegate
+    private func openViewController(index: Int) {
+        print(index)
+        self.delegate?.gotoView(view: self.elementList[index])
+    }
+    
+    private func closeSlide() {
+        print("cerrado")
+    }
+    
 }
 

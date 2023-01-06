@@ -11,14 +11,10 @@ protocol HomeViewProtocol: AnyObject {
     
 }
 
-protocol HomeInteractorProtocol: AnyObject {
-    
-}
-
 protocol HomePresenterProtocol: AnyObject {
-    
+    func requestNextView(view: List)
 }
 
 protocol HomeRouterProtocol: AnyObject {
-    
+    func navigateNextView(view: List)
 }

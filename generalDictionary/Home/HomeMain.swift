@@ -14,17 +14,14 @@ open class HomeMain{
         if let view = viewController {
             let presenter = HomePresenter()
             let router = HomeRouter()
-            let interactor = HomeInteractor()
             
             view.presenter = presenter
             
             presenter.view = view
-            presenter.interactor = interactor
             presenter.router = router
             
             router.navigation = navigation
             
-            interactor.presenter = presenter
             return view
         }
         return UIViewController()

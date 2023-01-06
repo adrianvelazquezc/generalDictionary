@@ -13,5 +13,11 @@ class HomeRouter{
 }
 
 extension HomeRouter: HomeRouterProtocol{
+    func navigateNextView(view: List) {
+        if let navigationController = self.navigation{
+            navigationController.pushViewController(view.viewController, animated: true )
+        }
+    }
+    
     
 }
