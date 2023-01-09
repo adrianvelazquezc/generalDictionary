@@ -48,7 +48,7 @@ class InteractiveControlsViewUI: UIView{
         picker.translatesAutoresizingMaskIntoConstraints = false
         picker.delegate = self
         picker.dataSource = self
-        picker.backgroundColor = .gray
+        picker.backgroundColor = .lightGray
         return picker
     }()
     
@@ -64,7 +64,7 @@ class InteractiveControlsViewUI: UIView{
     private lazy var Pager: UIPageControl = {
         let pager = UIPageControl()
         pager.translatesAutoresizingMaskIntoConstraints = false
-        pager.backgroundColor = .gray
+        pager.backgroundColor = .lightGray
         pager.numberOfPages = pickerValues.count
         pager.addTarget(self, action: #selector(myPageControlAction), for: .touchDown)
         return pager
@@ -86,6 +86,7 @@ class InteractiveControlsViewUI: UIView{
         for (index, value) in self.pickerValues.enumerated() {
             control.insertSegment(withTitle: value, at: index, animated: true)
         }
+        control.backgroundColor = .gray
         control.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
         return control
     }()
@@ -102,7 +103,7 @@ class InteractiveControlsViewUI: UIView{
     private var slider: UISlider = {
         let slider = UISlider()
         slider.translatesAutoresizingMaskIntoConstraints = false
-        slider.minimumTrackTintColor = .gray
+        slider.minimumTrackTintColor = .lightGray
         slider.minimumValue = 1
         slider.value = 1
         slider.addTarget(self, action: #selector(sliderControl(_:)), for: .valueChanged)

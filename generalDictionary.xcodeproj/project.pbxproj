@@ -57,6 +57,14 @@
 		CEAA5EB62968B30D00049358 /* InteractiveControlsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAE2968B30D00049358 /* InteractiveControlsInteractor.swift */; };
 		CEAA5EB72968B30D00049358 /* InteractiveControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAF2968B30D00049358 /* InteractiveControlsView.swift */; };
 		CEAA5EB82968B30D00049358 /* InteractiveControlsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EB02968B30D00049358 /* InteractiveControlsEntity.swift */; };
+		CEC2FC93296CA6FB00CD09B5 /* ProtocolsViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC8B296CA6FB00CD09B5 /* ProtocolsViewUI.swift */; };
+		CEC2FC94296CA6FB00CD09B5 /* ProtocolsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC8C296CA6FB00CD09B5 /* ProtocolsPresenter.swift */; };
+		CEC2FC95296CA6FB00CD09B5 /* ProtocolsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC8D296CA6FB00CD09B5 /* ProtocolsRouter.swift */; };
+		CEC2FC96296CA6FB00CD09B5 /* ProtocolsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC8E296CA6FB00CD09B5 /* ProtocolsProtocols.swift */; };
+		CEC2FC97296CA6FB00CD09B5 /* ProtocolsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC8F296CA6FB00CD09B5 /* ProtocolsMain.swift */; };
+		CEC2FC98296CA6FB00CD09B5 /* ProtocolsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC90296CA6FB00CD09B5 /* ProtocolsInteractor.swift */; };
+		CEC2FC99296CA6FB00CD09B5 /* ProtocolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC91296CA6FB00CD09B5 /* ProtocolsView.swift */; };
+		CEC2FC9A296CA6FB00CD09B5 /* ProtocolsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC92296CA6FB00CD09B5 /* ProtocolsEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +120,14 @@
 		CEAA5EAE2968B30D00049358 /* InteractiveControlsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsInteractor.swift; sourceTree = "<group>"; };
 		CEAA5EAF2968B30D00049358 /* InteractiveControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsView.swift; sourceTree = "<group>"; };
 		CEAA5EB02968B30D00049358 /* InteractiveControlsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsEntity.swift; sourceTree = "<group>"; };
+		CEC2FC8B296CA6FB00CD09B5 /* ProtocolsViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsViewUI.swift; sourceTree = "<group>"; };
+		CEC2FC8C296CA6FB00CD09B5 /* ProtocolsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsPresenter.swift; sourceTree = "<group>"; };
+		CEC2FC8D296CA6FB00CD09B5 /* ProtocolsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsRouter.swift; sourceTree = "<group>"; };
+		CEC2FC8E296CA6FB00CD09B5 /* ProtocolsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsProtocols.swift; sourceTree = "<group>"; };
+		CEC2FC8F296CA6FB00CD09B5 /* ProtocolsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsMain.swift; sourceTree = "<group>"; };
+		CEC2FC90296CA6FB00CD09B5 /* ProtocolsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsInteractor.swift; sourceTree = "<group>"; };
+		CEC2FC91296CA6FB00CD09B5 /* ProtocolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsView.swift; sourceTree = "<group>"; };
+		CEC2FC92296CA6FB00CD09B5 /* ProtocolsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +200,7 @@
 				CEAA5E6529687B0400049358 /* Constrains */,
 				CEAA5E542968720B00049358 /* Scroll */,
 				CEAA5E982968B24300049358 /* InteractiveControls */,
+				CEC2FC8A296CA6DB00CD09B5 /* Protocols */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +280,21 @@
 			path = InteractiveControls;
 			sourceTree = "<group>";
 		};
+		CEC2FC8A296CA6DB00CD09B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2FC8B296CA6FB00CD09B5 /* ProtocolsViewUI.swift */,
+				CEC2FC8C296CA6FB00CD09B5 /* ProtocolsPresenter.swift */,
+				CEC2FC8D296CA6FB00CD09B5 /* ProtocolsRouter.swift */,
+				CEC2FC8E296CA6FB00CD09B5 /* ProtocolsProtocols.swift */,
+				CEC2FC8F296CA6FB00CD09B5 /* ProtocolsMain.swift */,
+				CEC2FC90296CA6FB00CD09B5 /* ProtocolsInteractor.swift */,
+				CEC2FC91296CA6FB00CD09B5 /* ProtocolsView.swift */,
+				CEC2FC92296CA6FB00CD09B5 /* ProtocolsEntity.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,24 +365,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC2FC93296CA6FB00CD09B5 /* ProtocolsViewUI.swift in Sources */,
 				CEAA5E6F29687B2100049358 /* ConstrainsPresenter.swift in Sources */,
 				CEAA5E3429678B9400049358 /* HomePresenter.swift in Sources */,
 				CEAA5E642968727000049358 /* ScrollEntity.swift in Sources */,
 				CEAA5E5E2968727000049358 /* ScrollPresenter.swift in Sources */,
 				CEAA5E932968849100049358 /* ControllersProtocols.swift in Sources */,
 				CEAA5E3729678B9400049358 /* HomeMain.swift in Sources */,
+				CEC2FC97296CA6FB00CD09B5 /* ProtocolsMain.swift in Sources */,
 				CEAA5E612968727000049358 /* ScrollMain.swift in Sources */,
+				CEC2FC94296CA6FB00CD09B5 /* ProtocolsPresenter.swift in Sources */,
 				CEAA5E4D2967AAC700049358 /* AppDelegateProtocols.swift in Sources */,
 				CEAA5E3629678B9400049358 /* HomeProtocols.swift in Sources */,
 				CEAA5EB82968B30D00049358 /* InteractiveControlsEntity.swift in Sources */,
 				CEAA5E902968849100049358 /* ControllersViewUI.swift in Sources */,
+				CEC2FC95296CA6FB00CD09B5 /* ProtocolsRouter.swift in Sources */,
 				CEAA5EB32968B30D00049358 /* InteractiveControlsRouter.swift in Sources */,
 				CEAA5E3529678B9400049358 /* HomeRouter.swift in Sources */,
+				CEC2FC99296CA6FB00CD09B5 /* ProtocolsView.swift in Sources */,
 				CEAA5E7029687B2100049358 /* ConstrainsRouter.swift in Sources */,
 				CEAA5E942968849100049358 /* ControllersMain.swift in Sources */,
 				CEAA5EB22968B30D00049358 /* InteractiveControlsPresenter.swift in Sources */,
 				CEAA5E3C29678E0500049358 /* MainListTableViewCell.swift in Sources */,
 				CEAA5E4E2967AAC700049358 /* AppDelegateMain.swift in Sources */,
+				CEC2FC98296CA6FB00CD09B5 /* ProtocolsInteractor.swift in Sources */,
+				CEC2FC96296CA6FB00CD09B5 /* ProtocolsProtocols.swift in Sources */,
 				CEAA5E7329687B2100049358 /* ConstrainsInteractor.swift in Sources */,
 				CEAA5E622968727000049358 /* ScrollInteractor.swift in Sources */,
 				CEAA5E17296780F000049358 /* AppDelegate.swift in Sources */,
@@ -368,6 +407,7 @@
 				CEAA5E602968727000049358 /* ScrollProtocols.swift in Sources */,
 				CEAA5E3329678B9400049358 /* HomeViewUI.swift in Sources */,
 				CEAA5E512967AAC700049358 /* AppDelegateEntity.swift in Sources */,
+				CEC2FC9A296CA6FB00CD09B5 /* ProtocolsEntity.swift in Sources */,
 				CEAA5E4A2967AAC700049358 /* AppDelegateViewUI.swift in Sources */,
 				CEAA5E5F2968727000049358 /* ScrollRouter.swift in Sources */,
 				CEAA5EB52968B30D00049358 /* InteractiveControlsMain.swift in Sources */,

@@ -43,17 +43,19 @@ class HomeViewUI: UIView{
             self.init()
             self.delegate = delegate
             self.navigationController = navigation
-            //lista de los elementos
-            elementList.append(List(title: "¿Como configurar el appDelegate?", viewController: AppDelegateMain.createModule(navigation: navigation, vcTitle: "Definir appDelegate")))
-            elementList.append(List(title: "¿Que es un control? y ¿Como definirlos?", viewController: ControllersMain.createModule(navigation: navigation, vcTitle: "Controles")))
-            elementList.append(List(title: "¿Como posicionar los elementos en la vista?", viewController: ConstrainsMain.createModule(navigation: navigation, vcTitle: "Constrains")))
-            elementList.append(List(title: "¿Como hacer que la pantalla cresca si no cabe en la pantalla?", viewController: ScrollMain.createModule(navigation: navigation, vcTitle: "ScrollView")))
-            elementList.append(List(title: "Controles interactivos", viewController: InteractiveControlsMain.createModule(navigation: navigation, vcTitle: "Controles interactivos")))
-            
+            addElements()
             setUI()
             setConstraints()
         }
-    
+    private func addElements(){
+        //lista de los elementos
+        elementList.append(List(title: "¿Como configurar el appDelegate?", viewController: AppDelegateMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Definir appDelegate")))
+        elementList.append(List(title: "¿Que es un control? y ¿Como definirlos?", viewController: ControllersMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Controles")))
+        elementList.append(List(title: "¿Como posicionar los elementos en la vista?", viewController: ConstrainsMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Constrains")))
+        elementList.append(List(title: "¿Como hacer que la pantalla cresca si no cabe en la pantalla?", viewController: ScrollMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "ScrollView")))
+        elementList.append(List(title: "Controles interactivos", viewController: InteractiveControlsMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Controles interactivos")))
+        elementList.append(List(title: "¿Que son los protocolos y delegados? y ¿Para que sirven?", viewController: ProtocolsMain.createModule(navigation: (self.navigationController ?? UINavigationController()),vcTitle: "Protocolos y delegados" )))
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
