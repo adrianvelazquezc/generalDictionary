@@ -48,6 +48,7 @@ class HomeViewUI: UIView{
             elementList.append(List(title: "¿Que es un control? y ¿Como definirlos?", viewController: ControllersMain.createModule(navigation: navigation, vcTitle: "Controles")))
             elementList.append(List(title: "¿Como posicionar los elementos en la vista?", viewController: ConstrainsMain.createModule(navigation: navigation, vcTitle: "Constrains")))
             elementList.append(List(title: "¿Como hacer que la pantalla cresca si no cabe en la pantalla?", viewController: ScrollMain.createModule(navigation: navigation, vcTitle: "ScrollView")))
+            elementList.append(List(title: "Controles interactivos", viewController: InteractiveControlsMain.createModule(navigation: navigation, vcTitle: "Controles interactivos")))
             
             setUI()
             setConstraints()

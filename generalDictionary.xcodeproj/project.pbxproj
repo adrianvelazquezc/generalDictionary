@@ -49,6 +49,14 @@
 		CEAA5E952968849100049358 /* ControllersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E8D2968849100049358 /* ControllersInteractor.swift */; };
 		CEAA5E962968849100049358 /* ControllersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E8E2968849100049358 /* ControllersView.swift */; };
 		CEAA5E972968849100049358 /* ControllersEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E8F2968849100049358 /* ControllersEntity.swift */; };
+		CEAA5EB12968B30D00049358 /* InteractiveControlsViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EA92968B30C00049358 /* InteractiveControlsViewUI.swift */; };
+		CEAA5EB22968B30D00049358 /* InteractiveControlsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAA2968B30D00049358 /* InteractiveControlsPresenter.swift */; };
+		CEAA5EB32968B30D00049358 /* InteractiveControlsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAB2968B30D00049358 /* InteractiveControlsRouter.swift */; };
+		CEAA5EB42968B30D00049358 /* InteractiveControlsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAC2968B30D00049358 /* InteractiveControlsProtocols.swift */; };
+		CEAA5EB52968B30D00049358 /* InteractiveControlsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAD2968B30D00049358 /* InteractiveControlsMain.swift */; };
+		CEAA5EB62968B30D00049358 /* InteractiveControlsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAE2968B30D00049358 /* InteractiveControlsInteractor.swift */; };
+		CEAA5EB72968B30D00049358 /* InteractiveControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EAF2968B30D00049358 /* InteractiveControlsView.swift */; };
+		CEAA5EB82968B30D00049358 /* InteractiveControlsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5EB02968B30D00049358 /* InteractiveControlsEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +104,14 @@
 		CEAA5E8D2968849100049358 /* ControllersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersInteractor.swift; sourceTree = "<group>"; };
 		CEAA5E8E2968849100049358 /* ControllersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersView.swift; sourceTree = "<group>"; };
 		CEAA5E8F2968849100049358 /* ControllersEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersEntity.swift; sourceTree = "<group>"; };
+		CEAA5EA92968B30C00049358 /* InteractiveControlsViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsViewUI.swift; sourceTree = "<group>"; };
+		CEAA5EAA2968B30D00049358 /* InteractiveControlsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsPresenter.swift; sourceTree = "<group>"; };
+		CEAA5EAB2968B30D00049358 /* InteractiveControlsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsRouter.swift; sourceTree = "<group>"; };
+		CEAA5EAC2968B30D00049358 /* InteractiveControlsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsProtocols.swift; sourceTree = "<group>"; };
+		CEAA5EAD2968B30D00049358 /* InteractiveControlsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsMain.swift; sourceTree = "<group>"; };
+		CEAA5EAE2968B30D00049358 /* InteractiveControlsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsInteractor.swift; sourceTree = "<group>"; };
+		CEAA5EAF2968B30D00049358 /* InteractiveControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsView.swift; sourceTree = "<group>"; };
+		CEAA5EB02968B30D00049358 /* InteractiveControlsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveControlsEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +183,7 @@
 				CEAA5E872968847F00049358 /* Controllers */,
 				CEAA5E6529687B0400049358 /* Constrains */,
 				CEAA5E542968720B00049358 /* Scroll */,
+				CEAA5E982968B24300049358 /* InteractiveControls */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +246,21 @@
 				CEAA5E8F2968849100049358 /* ControllersEntity.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEAA5E982968B24300049358 /* InteractiveControls */ = {
+			isa = PBXGroup;
+			children = (
+				CEAA5EA92968B30C00049358 /* InteractiveControlsViewUI.swift */,
+				CEAA5EAA2968B30D00049358 /* InteractiveControlsPresenter.swift */,
+				CEAA5EAB2968B30D00049358 /* InteractiveControlsRouter.swift */,
+				CEAA5EAC2968B30D00049358 /* InteractiveControlsProtocols.swift */,
+				CEAA5EAD2968B30D00049358 /* InteractiveControlsMain.swift */,
+				CEAA5EAE2968B30D00049358 /* InteractiveControlsInteractor.swift */,
+				CEAA5EAF2968B30D00049358 /* InteractiveControlsView.swift */,
+				CEAA5EB02968B30D00049358 /* InteractiveControlsEntity.swift */,
+			);
+			path = InteractiveControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,31 +342,39 @@
 				CEAA5E612968727000049358 /* ScrollMain.swift in Sources */,
 				CEAA5E4D2967AAC700049358 /* AppDelegateProtocols.swift in Sources */,
 				CEAA5E3629678B9400049358 /* HomeProtocols.swift in Sources */,
+				CEAA5EB82968B30D00049358 /* InteractiveControlsEntity.swift in Sources */,
 				CEAA5E902968849100049358 /* ControllersViewUI.swift in Sources */,
+				CEAA5EB32968B30D00049358 /* InteractiveControlsRouter.swift in Sources */,
 				CEAA5E3529678B9400049358 /* HomeRouter.swift in Sources */,
 				CEAA5E7029687B2100049358 /* ConstrainsRouter.swift in Sources */,
 				CEAA5E942968849100049358 /* ControllersMain.swift in Sources */,
+				CEAA5EB22968B30D00049358 /* InteractiveControlsPresenter.swift in Sources */,
 				CEAA5E3C29678E0500049358 /* MainListTableViewCell.swift in Sources */,
 				CEAA5E4E2967AAC700049358 /* AppDelegateMain.swift in Sources */,
 				CEAA5E7329687B2100049358 /* ConstrainsInteractor.swift in Sources */,
 				CEAA5E622968727000049358 /* ScrollInteractor.swift in Sources */,
 				CEAA5E17296780F000049358 /* AppDelegate.swift in Sources */,
+				CEAA5EB12968B30D00049358 /* InteractiveControlsViewUI.swift in Sources */,
 				CEAA5E632968727000049358 /* ScrollView.swift in Sources */,
 				CEAA5E3929678B9400049358 /* HomeView.swift in Sources */,
 				CEAA5E6E29687B2100049358 /* ConstrainsViewUI.swift in Sources */,
+				CEAA5EB42968B30D00049358 /* InteractiveControlsProtocols.swift in Sources */,
 				CEAA5E7529687B2100049358 /* ConstrainsEntity.swift in Sources */,
 				CEAA5E7129687B2100049358 /* ConstrainsProtocols.swift in Sources */,
 				CEAA5E952968849100049358 /* ControllersInteractor.swift in Sources */,
 				CEAA5E5D2968727000049358 /* ScrollViewUI.swift in Sources */,
+				CEAA5EB62968B30D00049358 /* InteractiveControlsInteractor.swift in Sources */,
 				CEAA5E4F2967AAC700049358 /* AppDelegateInteractor.swift in Sources */,
 				CEAA5E602968727000049358 /* ScrollProtocols.swift in Sources */,
 				CEAA5E3329678B9400049358 /* HomeViewUI.swift in Sources */,
 				CEAA5E512967AAC700049358 /* AppDelegateEntity.swift in Sources */,
 				CEAA5E4A2967AAC700049358 /* AppDelegateViewUI.swift in Sources */,
 				CEAA5E5F2968727000049358 /* ScrollRouter.swift in Sources */,
+				CEAA5EB52968B30D00049358 /* InteractiveControlsMain.swift in Sources */,
 				CEAA5E962968849100049358 /* ControllersView.swift in Sources */,
 				CEAA5E972968849100049358 /* ControllersEntity.swift in Sources */,
 				CEAA5E912968849100049358 /* ControllersPresenter.swift in Sources */,
+				CEAA5EB72968B30D00049358 /* InteractiveControlsView.swift in Sources */,
 				CEAA5E7229687B2100049358 /* ConstrainsMain.swift in Sources */,
 				CEAA5E7429687B2100049358 /* ConstrainsView.swift in Sources */,
 				CEAA5E922968849100049358 /* ControllersRouter.swift in Sources */,
