@@ -43,6 +43,7 @@ class HomeViewUI: UIView{
             self.init()
             self.delegate = delegate
             self.navigationController = navigation
+            
             addElements()
             setUI()
             setConstraints()
@@ -55,6 +56,7 @@ class HomeViewUI: UIView{
         elementList.append(List(title: "¿Como hacer que la pantalla cresca si no cabe en la pantalla?", viewController: ScrollMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "ScrollView")))
         elementList.append(List(title: "Controles interactivos", viewController: InteractiveControlsMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Controles interactivos")))
         elementList.append(List(title: "¿Que son los protocolos y delegados? y ¿Para que sirven?", viewController: ProtocolsMain.createModule(navigation: (self.navigationController ?? UINavigationController()),vcTitle: "Protocolos y delegados" )))
+        elementList.append(List(title: "¿Como cambiar el tamaño, color y estilo de un texto?", viewController: AttributesMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Atributos")))
     }
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -65,6 +65,14 @@
 		CEC2FC98296CA6FB00CD09B5 /* ProtocolsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC90296CA6FB00CD09B5 /* ProtocolsInteractor.swift */; };
 		CEC2FC99296CA6FB00CD09B5 /* ProtocolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC91296CA6FB00CD09B5 /* ProtocolsView.swift */; };
 		CEC2FC9A296CA6FB00CD09B5 /* ProtocolsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC92296CA6FB00CD09B5 /* ProtocolsEntity.swift */; };
+		CEC2FCA4296CD21A00CD09B5 /* AttributesViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC9C296CD21A00CD09B5 /* AttributesViewUI.swift */; };
+		CEC2FCA5296CD21A00CD09B5 /* AttributesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC9D296CD21A00CD09B5 /* AttributesPresenter.swift */; };
+		CEC2FCA6296CD21A00CD09B5 /* AttributesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC9E296CD21A00CD09B5 /* AttributesRouter.swift */; };
+		CEC2FCA7296CD21A00CD09B5 /* AttributesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FC9F296CD21A00CD09B5 /* AttributesProtocols.swift */; };
+		CEC2FCA8296CD21A00CD09B5 /* AttributesMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCA0296CD21A00CD09B5 /* AttributesMain.swift */; };
+		CEC2FCA9296CD21A00CD09B5 /* AttributesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCA1296CD21A00CD09B5 /* AttributesInteractor.swift */; };
+		CEC2FCAA296CD21A00CD09B5 /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCA2296CD21A00CD09B5 /* AttributesView.swift */; };
+		CEC2FCAB296CD21A00CD09B5 /* AttributesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCA3296CD21A00CD09B5 /* AttributesEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +136,14 @@
 		CEC2FC90296CA6FB00CD09B5 /* ProtocolsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsInteractor.swift; sourceTree = "<group>"; };
 		CEC2FC91296CA6FB00CD09B5 /* ProtocolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsView.swift; sourceTree = "<group>"; };
 		CEC2FC92296CA6FB00CD09B5 /* ProtocolsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsEntity.swift; sourceTree = "<group>"; };
+		CEC2FC9C296CD21A00CD09B5 /* AttributesViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesViewUI.swift; sourceTree = "<group>"; };
+		CEC2FC9D296CD21A00CD09B5 /* AttributesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesPresenter.swift; sourceTree = "<group>"; };
+		CEC2FC9E296CD21A00CD09B5 /* AttributesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesRouter.swift; sourceTree = "<group>"; };
+		CEC2FC9F296CD21A00CD09B5 /* AttributesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesProtocols.swift; sourceTree = "<group>"; };
+		CEC2FCA0296CD21A00CD09B5 /* AttributesMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesMain.swift; sourceTree = "<group>"; };
+		CEC2FCA1296CD21A00CD09B5 /* AttributesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesInteractor.swift; sourceTree = "<group>"; };
+		CEC2FCA2296CD21A00CD09B5 /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
+		CEC2FCA3296CD21A00CD09B5 /* AttributesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +217,7 @@
 				CEAA5E542968720B00049358 /* Scroll */,
 				CEAA5E982968B24300049358 /* InteractiveControls */,
 				CEC2FC8A296CA6DB00CD09B5 /* Protocols */,
+				CEC2FC9B296CD1FA00CD09B5 /* Attributes */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +312,21 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		CEC2FC9B296CD1FA00CD09B5 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2FC9C296CD21A00CD09B5 /* AttributesViewUI.swift */,
+				CEC2FC9D296CD21A00CD09B5 /* AttributesPresenter.swift */,
+				CEC2FC9E296CD21A00CD09B5 /* AttributesRouter.swift */,
+				CEC2FC9F296CD21A00CD09B5 /* AttributesProtocols.swift */,
+				CEC2FCA0296CD21A00CD09B5 /* AttributesMain.swift */,
+				CEC2FCA1296CD21A00CD09B5 /* AttributesInteractor.swift */,
+				CEC2FCA2296CD21A00CD09B5 /* AttributesView.swift */,
+				CEC2FCA3296CD21A00CD09B5 /* AttributesEntity.swift */,
+			);
+			path = Attributes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -366,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC2FC93296CA6FB00CD09B5 /* ProtocolsViewUI.swift in Sources */,
+				CEC2FCA5296CD21A00CD09B5 /* AttributesPresenter.swift in Sources */,
 				CEAA5E6F29687B2100049358 /* ConstrainsPresenter.swift in Sources */,
 				CEAA5E3429678B9400049358 /* HomePresenter.swift in Sources */,
 				CEAA5E642968727000049358 /* ScrollEntity.swift in Sources */,
@@ -375,6 +408,7 @@
 				CEC2FC97296CA6FB00CD09B5 /* ProtocolsMain.swift in Sources */,
 				CEAA5E612968727000049358 /* ScrollMain.swift in Sources */,
 				CEC2FC94296CA6FB00CD09B5 /* ProtocolsPresenter.swift in Sources */,
+				CEC2FCA4296CD21A00CD09B5 /* AttributesViewUI.swift in Sources */,
 				CEAA5E4D2967AAC700049358 /* AppDelegateProtocols.swift in Sources */,
 				CEAA5E3629678B9400049358 /* HomeProtocols.swift in Sources */,
 				CEAA5EB82968B30D00049358 /* InteractiveControlsEntity.swift in Sources */,
@@ -384,14 +418,17 @@
 				CEAA5E3529678B9400049358 /* HomeRouter.swift in Sources */,
 				CEC2FC99296CA6FB00CD09B5 /* ProtocolsView.swift in Sources */,
 				CEAA5E7029687B2100049358 /* ConstrainsRouter.swift in Sources */,
+				CEC2FCAB296CD21A00CD09B5 /* AttributesEntity.swift in Sources */,
 				CEAA5E942968849100049358 /* ControllersMain.swift in Sources */,
 				CEAA5EB22968B30D00049358 /* InteractiveControlsPresenter.swift in Sources */,
 				CEAA5E3C29678E0500049358 /* MainListTableViewCell.swift in Sources */,
+				CEC2FCAA296CD21A00CD09B5 /* AttributesView.swift in Sources */,
 				CEAA5E4E2967AAC700049358 /* AppDelegateMain.swift in Sources */,
 				CEC2FC98296CA6FB00CD09B5 /* ProtocolsInteractor.swift in Sources */,
 				CEC2FC96296CA6FB00CD09B5 /* ProtocolsProtocols.swift in Sources */,
 				CEAA5E7329687B2100049358 /* ConstrainsInteractor.swift in Sources */,
 				CEAA5E622968727000049358 /* ScrollInteractor.swift in Sources */,
+				CEC2FCA8296CD21A00CD09B5 /* AttributesMain.swift in Sources */,
 				CEAA5E17296780F000049358 /* AppDelegate.swift in Sources */,
 				CEAA5EB12968B30D00049358 /* InteractiveControlsViewUI.swift in Sources */,
 				CEAA5E632968727000049358 /* ScrollView.swift in Sources */,
@@ -412,9 +449,12 @@
 				CEAA5E5F2968727000049358 /* ScrollRouter.swift in Sources */,
 				CEAA5EB52968B30D00049358 /* InteractiveControlsMain.swift in Sources */,
 				CEAA5E962968849100049358 /* ControllersView.swift in Sources */,
+				CEC2FCA6296CD21A00CD09B5 /* AttributesRouter.swift in Sources */,
 				CEAA5E972968849100049358 /* ControllersEntity.swift in Sources */,
 				CEAA5E912968849100049358 /* ControllersPresenter.swift in Sources */,
+				CEC2FCA7296CD21A00CD09B5 /* AttributesProtocols.swift in Sources */,
 				CEAA5EB72968B30D00049358 /* InteractiveControlsView.swift in Sources */,
+				CEC2FCA9296CD21A00CD09B5 /* AttributesInteractor.swift in Sources */,
 				CEAA5E7229687B2100049358 /* ConstrainsMain.swift in Sources */,
 				CEAA5E7429687B2100049358 /* ConstrainsView.swift in Sources */,
 				CEAA5E922968849100049358 /* ControllersRouter.swift in Sources */,
