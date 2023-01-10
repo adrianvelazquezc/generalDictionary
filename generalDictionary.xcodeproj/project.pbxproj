@@ -82,6 +82,15 @@
 		CEC2FCBB296CE29600CD09B5 /* TablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCB3296CE29600CD09B5 /* TablesView.swift */; };
 		CEC2FCBC296CE29600CD09B5 /* TablesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCB4296CE29600CD09B5 /* TablesEntity.swift */; };
 		CEC2FCBE296CE4BB00CD09B5 /* exampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCBD296CE4BB00CD09B5 /* exampleTableViewCell.swift */; };
+		CEC2FCC8296CEE5200CD09B5 /* CollectionsViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC0296CEE5200CD09B5 /* CollectionsViewUI.swift */; };
+		CEC2FCC9296CEE5200CD09B5 /* CollectionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC1296CEE5200CD09B5 /* CollectionsPresenter.swift */; };
+		CEC2FCCA296CEE5200CD09B5 /* CollectionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC2296CEE5200CD09B5 /* CollectionsRouter.swift */; };
+		CEC2FCCB296CEE5200CD09B5 /* CollectionsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC3296CEE5200CD09B5 /* CollectionsProtocols.swift */; };
+		CEC2FCCC296CEE5200CD09B5 /* CollectionsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC4296CEE5200CD09B5 /* CollectionsMain.swift */; };
+		CEC2FCCD296CEE5200CD09B5 /* CollectionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC5296CEE5200CD09B5 /* CollectionsInteractor.swift */; };
+		CEC2FCCE296CEE5200CD09B5 /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC6296CEE5200CD09B5 /* CollectionsView.swift */; };
+		CEC2FCCF296CEE5200CD09B5 /* CollectionsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC7296CEE5200CD09B5 /* CollectionsEntity.swift */; };
+		CEC2FCD1296CEF9E00CD09B5 /* exampleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD0296CEF9E00CD09B5 /* exampleCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +171,15 @@
 		CEC2FCB3296CE29600CD09B5 /* TablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesView.swift; sourceTree = "<group>"; };
 		CEC2FCB4296CE29600CD09B5 /* TablesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesEntity.swift; sourceTree = "<group>"; };
 		CEC2FCBD296CE4BB00CD09B5 /* exampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleTableViewCell.swift; sourceTree = "<group>"; };
+		CEC2FCC0296CEE5200CD09B5 /* CollectionsViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewUI.swift; sourceTree = "<group>"; };
+		CEC2FCC1296CEE5200CD09B5 /* CollectionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsPresenter.swift; sourceTree = "<group>"; };
+		CEC2FCC2296CEE5200CD09B5 /* CollectionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsRouter.swift; sourceTree = "<group>"; };
+		CEC2FCC3296CEE5200CD09B5 /* CollectionsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsProtocols.swift; sourceTree = "<group>"; };
+		CEC2FCC4296CEE5200CD09B5 /* CollectionsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsMain.swift; sourceTree = "<group>"; };
+		CEC2FCC5296CEE5200CD09B5 /* CollectionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsInteractor.swift; sourceTree = "<group>"; };
+		CEC2FCC6296CEE5200CD09B5 /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
+		CEC2FCC7296CEE5200CD09B5 /* CollectionsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsEntity.swift; sourceTree = "<group>"; };
+		CEC2FCD0296CEF9E00CD09B5 /* exampleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +255,7 @@
 				CEC2FC8A296CA6DB00CD09B5 /* Protocols */,
 				CEC2FC9B296CD1FA00CD09B5 /* Attributes */,
 				CEC2FCAC296CE26B00CD09B5 /* Tables */,
+				CEC2FCBF296CEDEA00CD09B5 /* Collections */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -362,6 +381,22 @@
 			path = Tables;
 			sourceTree = "<group>";
 		};
+		CEC2FCBF296CEDEA00CD09B5 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2FCC0296CEE5200CD09B5 /* CollectionsViewUI.swift */,
+				CEC2FCC1296CEE5200CD09B5 /* CollectionsPresenter.swift */,
+				CEC2FCC2296CEE5200CD09B5 /* CollectionsRouter.swift */,
+				CEC2FCC3296CEE5200CD09B5 /* CollectionsProtocols.swift */,
+				CEC2FCC4296CEE5200CD09B5 /* CollectionsMain.swift */,
+				CEC2FCC5296CEE5200CD09B5 /* CollectionsInteractor.swift */,
+				CEC2FCC6296CEE5200CD09B5 /* CollectionsView.swift */,
+				CEC2FCC7296CEE5200CD09B5 /* CollectionsEntity.swift */,
+				CEC2FCD0296CEF9E00CD09B5 /* exampleCollectionCell.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -434,11 +469,13 @@
 			files = (
 				CEC2FC93296CA6FB00CD09B5 /* ProtocolsViewUI.swift in Sources */,
 				CEC2FCA5296CD21A00CD09B5 /* AttributesPresenter.swift in Sources */,
+				CEC2FCC8296CEE5200CD09B5 /* CollectionsViewUI.swift in Sources */,
 				CEAA5E6F29687B2100049358 /* ConstrainsPresenter.swift in Sources */,
 				CEAA5E3429678B9400049358 /* HomePresenter.swift in Sources */,
 				CEAA5E642968727000049358 /* ScrollEntity.swift in Sources */,
 				CEC2FCBC296CE29600CD09B5 /* TablesEntity.swift in Sources */,
 				CEAA5E5E2968727000049358 /* ScrollPresenter.swift in Sources */,
+				CEC2FCCF296CEE5200CD09B5 /* CollectionsEntity.swift in Sources */,
 				CEC2FCBE296CE4BB00CD09B5 /* exampleTableViewCell.swift in Sources */,
 				CEAA5E932968849100049358 /* ControllersProtocols.swift in Sources */,
 				CEAA5E3729678B9400049358 /* HomeMain.swift in Sources */,
@@ -454,6 +491,7 @@
 				CEAA5E902968849100049358 /* ControllersViewUI.swift in Sources */,
 				CEC2FC95296CA6FB00CD09B5 /* ProtocolsRouter.swift in Sources */,
 				CEC2FCB5296CE29600CD09B5 /* TablesViewUI.swift in Sources */,
+				CEC2FCD1296CEF9E00CD09B5 /* exampleCollectionCell.swift in Sources */,
 				CEAA5EB32968B30D00049358 /* InteractiveControlsRouter.swift in Sources */,
 				CEAA5E3529678B9400049358 /* HomeRouter.swift in Sources */,
 				CEC2FC99296CA6FB00CD09B5 /* ProtocolsView.swift in Sources */,
@@ -473,6 +511,7 @@
 				CEAA5E17296780F000049358 /* AppDelegate.swift in Sources */,
 				CEAA5EB12968B30D00049358 /* InteractiveControlsViewUI.swift in Sources */,
 				CEAA5E632968727000049358 /* ScrollView.swift in Sources */,
+				CEC2FCCE296CEE5200CD09B5 /* CollectionsView.swift in Sources */,
 				CEAA5E3929678B9400049358 /* HomeView.swift in Sources */,
 				CEAA5E6E29687B2100049358 /* ConstrainsViewUI.swift in Sources */,
 				CEAA5EB42968B30D00049358 /* InteractiveControlsProtocols.swift in Sources */,
@@ -481,6 +520,7 @@
 				CEAA5E952968849100049358 /* ControllersInteractor.swift in Sources */,
 				CEAA5E5D2968727000049358 /* ScrollViewUI.swift in Sources */,
 				CEAA5EB62968B30D00049358 /* InteractiveControlsInteractor.swift in Sources */,
+				CEC2FCCD296CEE5200CD09B5 /* CollectionsInteractor.swift in Sources */,
 				CEAA5E4F2967AAC700049358 /* AppDelegateInteractor.swift in Sources */,
 				CEAA5E602968727000049358 /* ScrollProtocols.swift in Sources */,
 				CEC2FCBA296CE29600CD09B5 /* TablesInteractor.swift in Sources */,
@@ -488,6 +528,7 @@
 				CEAA5E512967AAC700049358 /* AppDelegateEntity.swift in Sources */,
 				CEC2FC9A296CA6FB00CD09B5 /* ProtocolsEntity.swift in Sources */,
 				CEAA5E4A2967AAC700049358 /* AppDelegateViewUI.swift in Sources */,
+				CEC2FCCB296CEE5200CD09B5 /* CollectionsProtocols.swift in Sources */,
 				CEAA5E5F2968727000049358 /* ScrollRouter.swift in Sources */,
 				CEAA5EB52968B30D00049358 /* InteractiveControlsMain.swift in Sources */,
 				CEAA5E962968849100049358 /* ControllersView.swift in Sources */,
@@ -496,14 +537,17 @@
 				CEAA5E972968849100049358 /* ControllersEntity.swift in Sources */,
 				CEAA5E912968849100049358 /* ControllersPresenter.swift in Sources */,
 				CEC2FCA7296CD21A00CD09B5 /* AttributesProtocols.swift in Sources */,
+				CEC2FCC9296CEE5200CD09B5 /* CollectionsPresenter.swift in Sources */,
 				CEAA5EB72968B30D00049358 /* InteractiveControlsView.swift in Sources */,
 				CEC2FCA9296CD21A00CD09B5 /* AttributesInteractor.swift in Sources */,
 				CEAA5E7229687B2100049358 /* ConstrainsMain.swift in Sources */,
+				CEC2FCCC296CEE5200CD09B5 /* CollectionsMain.swift in Sources */,
 				CEAA5E7429687B2100049358 /* ConstrainsView.swift in Sources */,
 				CEAA5E922968849100049358 /* ControllersRouter.swift in Sources */,
 				CEAA5E4B2967AAC700049358 /* AppDelegatePresenter.swift in Sources */,
 				CEAA5E502967AAC700049358 /* AppDelegateView.swift in Sources */,
 				CEAA5E4C2967AAC700049358 /* AppDelegateRouter.swift in Sources */,
+				CEC2FCCA296CEE5200CD09B5 /* CollectionsRouter.swift in Sources */,
 				CEC2FCB6296CE29600CD09B5 /* TablesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
