@@ -187,7 +187,7 @@ class ProtocolsViewUI: UIView{
             self.explanationLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             self.explanationLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             self.explanationLabel.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
-
+            
         ])
     }
 }

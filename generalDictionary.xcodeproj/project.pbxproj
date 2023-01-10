@@ -91,6 +91,14 @@
 		CEC2FCCE296CEE5200CD09B5 /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC6296CEE5200CD09B5 /* CollectionsView.swift */; };
 		CEC2FCCF296CEE5200CD09B5 /* CollectionsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCC7296CEE5200CD09B5 /* CollectionsEntity.swift */; };
 		CEC2FCD1296CEF9E00CD09B5 /* exampleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD0296CEF9E00CD09B5 /* exampleCollectionCell.swift */; };
+		CEC2FCDB296CF93C00CD09B5 /* DeclarationsViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD3296CF93C00CD09B5 /* DeclarationsViewUI.swift */; };
+		CEC2FCDC296CF93C00CD09B5 /* DeclarationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD4296CF93C00CD09B5 /* DeclarationsPresenter.swift */; };
+		CEC2FCDD296CF93C00CD09B5 /* DeclarationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD5296CF93C00CD09B5 /* DeclarationsRouter.swift */; };
+		CEC2FCDE296CF93C00CD09B5 /* DeclarationsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD6296CF93C00CD09B5 /* DeclarationsProtocols.swift */; };
+		CEC2FCDF296CF93C00CD09B5 /* DeclarationsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD7296CF93C00CD09B5 /* DeclarationsMain.swift */; };
+		CEC2FCE0296CF93C00CD09B5 /* DeclarationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD8296CF93C00CD09B5 /* DeclarationsInteractor.swift */; };
+		CEC2FCE1296CF93C00CD09B5 /* DeclarationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCD9296CF93C00CD09B5 /* DeclarationsView.swift */; };
+		CEC2FCE2296CF93C00CD09B5 /* DeclarationsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCDA296CF93C00CD09B5 /* DeclarationsEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -180,6 +188,14 @@
 		CEC2FCC6296CEE5200CD09B5 /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
 		CEC2FCC7296CEE5200CD09B5 /* CollectionsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsEntity.swift; sourceTree = "<group>"; };
 		CEC2FCD0296CEF9E00CD09B5 /* exampleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleCollectionCell.swift; sourceTree = "<group>"; };
+		CEC2FCD3296CF93C00CD09B5 /* DeclarationsViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsViewUI.swift; sourceTree = "<group>"; };
+		CEC2FCD4296CF93C00CD09B5 /* DeclarationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsPresenter.swift; sourceTree = "<group>"; };
+		CEC2FCD5296CF93C00CD09B5 /* DeclarationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsRouter.swift; sourceTree = "<group>"; };
+		CEC2FCD6296CF93C00CD09B5 /* DeclarationsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsProtocols.swift; sourceTree = "<group>"; };
+		CEC2FCD7296CF93C00CD09B5 /* DeclarationsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsMain.swift; sourceTree = "<group>"; };
+		CEC2FCD8296CF93C00CD09B5 /* DeclarationsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsInteractor.swift; sourceTree = "<group>"; };
+		CEC2FCD9296CF93C00CD09B5 /* DeclarationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsView.swift; sourceTree = "<group>"; };
+		CEC2FCDA296CF93C00CD09B5 /* DeclarationsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationsEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAA5E412967AAA900049358 /* AppDelegate */,
+				CEC2FCD2296CF92000CD09B5 /* Declarations */,
 				CEAA5E872968847F00049358 /* Controllers */,
 				CEAA5E6529687B0400049358 /* Constrains */,
 				CEAA5E542968720B00049358 /* Scroll */,
@@ -397,6 +414,21 @@
 			path = Collections;
 			sourceTree = "<group>";
 		};
+		CEC2FCD2296CF92000CD09B5 /* Declarations */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2FCD3296CF93C00CD09B5 /* DeclarationsViewUI.swift */,
+				CEC2FCD4296CF93C00CD09B5 /* DeclarationsPresenter.swift */,
+				CEC2FCD5296CF93C00CD09B5 /* DeclarationsRouter.swift */,
+				CEC2FCD6296CF93C00CD09B5 /* DeclarationsProtocols.swift */,
+				CEC2FCD7296CF93C00CD09B5 /* DeclarationsMain.swift */,
+				CEC2FCD8296CF93C00CD09B5 /* DeclarationsInteractor.swift */,
+				CEC2FCD9296CF93C00CD09B5 /* DeclarationsView.swift */,
+				CEC2FCDA296CF93C00CD09B5 /* DeclarationsEntity.swift */,
+			);
+			path = Declarations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -470,8 +502,11 @@
 				CEC2FC93296CA6FB00CD09B5 /* ProtocolsViewUI.swift in Sources */,
 				CEC2FCA5296CD21A00CD09B5 /* AttributesPresenter.swift in Sources */,
 				CEC2FCC8296CEE5200CD09B5 /* CollectionsViewUI.swift in Sources */,
+				CEC2FCDC296CF93C00CD09B5 /* DeclarationsPresenter.swift in Sources */,
+				CEC2FCDE296CF93C00CD09B5 /* DeclarationsProtocols.swift in Sources */,
 				CEAA5E6F29687B2100049358 /* ConstrainsPresenter.swift in Sources */,
 				CEAA5E3429678B9400049358 /* HomePresenter.swift in Sources */,
+				CEC2FCE2296CF93C00CD09B5 /* DeclarationsEntity.swift in Sources */,
 				CEAA5E642968727000049358 /* ScrollEntity.swift in Sources */,
 				CEC2FCBC296CE29600CD09B5 /* TablesEntity.swift in Sources */,
 				CEAA5E5E2968727000049358 /* ScrollPresenter.swift in Sources */,
@@ -483,10 +518,13 @@
 				CEC2FCB8296CE29600CD09B5 /* TablesProtocols.swift in Sources */,
 				CEC2FC97296CA6FB00CD09B5 /* ProtocolsMain.swift in Sources */,
 				CEAA5E612968727000049358 /* ScrollMain.swift in Sources */,
+				CEC2FCE1296CF93C00CD09B5 /* DeclarationsView.swift in Sources */,
 				CEC2FC94296CA6FB00CD09B5 /* ProtocolsPresenter.swift in Sources */,
+				CEC2FCDF296CF93C00CD09B5 /* DeclarationsMain.swift in Sources */,
 				CEC2FCA4296CD21A00CD09B5 /* AttributesViewUI.swift in Sources */,
 				CEAA5E4D2967AAC700049358 /* AppDelegateProtocols.swift in Sources */,
 				CEAA5E3629678B9400049358 /* HomeProtocols.swift in Sources */,
+				CEC2FCDB296CF93C00CD09B5 /* DeclarationsViewUI.swift in Sources */,
 				CEAA5EB82968B30D00049358 /* InteractiveControlsEntity.swift in Sources */,
 				CEAA5E902968849100049358 /* ControllersViewUI.swift in Sources */,
 				CEC2FC95296CA6FB00CD09B5 /* ProtocolsRouter.swift in Sources */,
@@ -525,6 +563,7 @@
 				CEAA5E602968727000049358 /* ScrollProtocols.swift in Sources */,
 				CEC2FCBA296CE29600CD09B5 /* TablesInteractor.swift in Sources */,
 				CEAA5E3329678B9400049358 /* HomeViewUI.swift in Sources */,
+				CEC2FCDD296CF93C00CD09B5 /* DeclarationsRouter.swift in Sources */,
 				CEAA5E512967AAC700049358 /* AppDelegateEntity.swift in Sources */,
 				CEC2FC9A296CA6FB00CD09B5 /* ProtocolsEntity.swift in Sources */,
 				CEAA5E4A2967AAC700049358 /* AppDelegateViewUI.swift in Sources */,
@@ -545,6 +584,7 @@
 				CEAA5E7429687B2100049358 /* ConstrainsView.swift in Sources */,
 				CEAA5E922968849100049358 /* ControllersRouter.swift in Sources */,
 				CEAA5E4B2967AAC700049358 /* AppDelegatePresenter.swift in Sources */,
+				CEC2FCE0296CF93C00CD09B5 /* DeclarationsInteractor.swift in Sources */,
 				CEAA5E502967AAC700049358 /* AppDelegateView.swift in Sources */,
 				CEAA5E4C2967AAC700049358 /* AppDelegateRouter.swift in Sources */,
 				CEC2FCCA296CEE5200CD09B5 /* CollectionsRouter.swift in Sources */,

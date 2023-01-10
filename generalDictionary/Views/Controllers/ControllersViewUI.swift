@@ -212,7 +212,7 @@ class ControllersViewUI: UIView{
         }
         self.endEditing(true)
         electionChosed()
-        }
+    }
     
     @objc private func labelClicked(_ sender: UITapGestureRecognizer) {
         if sender.view?.tag == 0 {
@@ -265,5 +265,3 @@ class ControllersViewUI: UIView{
         
     }
 }
-    
-

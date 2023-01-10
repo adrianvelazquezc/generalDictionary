@@ -118,7 +118,7 @@ class InteractiveControlsViewUI: UIView{
             self.navigationController = navigation
             
             slider.maximumValue = Float(self.pickerValues.count)
-
+            
             setUI()
             setConstraints()
         }
@@ -190,7 +190,7 @@ class InteractiveControlsViewUI: UIView{
             scrollView.topAnchor.constraint(equalTo: infoLabel.bottomAnchor),
             scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
             
             infoPicker.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 30),
             infoPicker.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
@@ -198,43 +198,36 @@ class InteractiveControlsViewUI: UIView{
             infoPicker.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
             Picker.topAnchor.constraint(equalTo: infoPicker.bottomAnchor, constant: 10),
-            Picker.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            Picker.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            Picker.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            Picker.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            Picker.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
             infoPager.topAnchor.constraint(equalTo: Picker.bottomAnchor, constant: 30),
-            infoPager.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            infoPager.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
             infoPager.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            infoPager.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
             Pager.topAnchor.constraint(equalTo: infoPager.bottomAnchor, constant: 10),
-            Pager.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            Pager.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            Pager.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            Pager.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             Pager.heightAnchor.constraint(equalToConstant: 100),
-            Pager.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
             infoSegmentedControl.topAnchor.constraint(equalTo: Pager.bottomAnchor, constant: 30),
-            infoSegmentedControl.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            infoSegmentedControl.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            infoSegmentedControl.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            infoSegmentedControl.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoSegmentedControl.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
             SegmentedControl.topAnchor.constraint(equalTo: infoSegmentedControl.bottomAnchor, constant: 10),
-            SegmentedControl.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            SegmentedControl.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            SegmentedControl.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            SegmentedControl.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             SegmentedControl.heightAnchor.constraint(equalToConstant: 100),
-            SegmentedControl.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
             infoslider.topAnchor.constraint(equalTo: SegmentedControl.bottomAnchor, constant: 30),
             infoslider.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
             infoslider.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
-            infoslider.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
             slider.topAnchor.constraint(equalTo: infoslider.bottomAnchor, constant: 10),
             slider.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
             slider.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             slider.heightAnchor.constraint(equalToConstant: 100),
             slider.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            slider.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
         ])
     }
     @objc func myPageControlAction(){

@@ -51,6 +51,7 @@ class HomeViewUI: UIView{
     private func addElements(){
         //lista de los elementos
         elementList.append(List(title: "¿Como configurar el appDelegate?", viewController: AppDelegateMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Definir appDelegate")))
+        elementList.append(List(title: "Declaraciones basicas en Swift", viewController: DeclarationsMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Declaraciones")))
         elementList.append(List(title: "¿Que es un control? y ¿Como definirlos?", viewController: ControllersMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Controles")))
         elementList.append(List(title: "¿Como posicionar los elementos en la vista?", viewController: ConstrainsMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Constrains")))
         elementList.append(List(title: "¿Como hacer que la pantalla cresca si no cabe en la pantalla?", viewController: ScrollMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "ScrollView")))

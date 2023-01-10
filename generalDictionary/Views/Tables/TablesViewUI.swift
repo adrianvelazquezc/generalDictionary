@@ -69,10 +69,10 @@ class TablesViewUI: UIView{
             infoLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             infoLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             
-                tableView.topAnchor.constraint(equalTo: infoLabel.bottomAnchor, constant: 10),
-                tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-                tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-                tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            tableView.topAnchor.constraint(equalTo: infoLabel.bottomAnchor, constant: 10),
+            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
         ])
     }
 }

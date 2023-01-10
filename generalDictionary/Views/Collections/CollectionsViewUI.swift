@@ -99,7 +99,7 @@ extension CollectionsViewUI: UICollectionViewDelegate, UICollectionViewDataSourc
         return collection
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         let width   = exampleCollection.frame.width/3 + 20
         let height  = UIScreen.main.bounds.height < 667 ? 100.0 : 124.0
         
