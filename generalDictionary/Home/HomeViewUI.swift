@@ -57,6 +57,7 @@ class HomeViewUI: UIView{
         elementList.append(List(title: "Controles interactivos", viewController: InteractiveControlsMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Controles interactivos")))
         elementList.append(List(title: "¿Que son los protocolos y delegados? y ¿Para que sirven?", viewController: ProtocolsMain.createModule(navigation: (self.navigationController ?? UINavigationController()),vcTitle: "Protocolos y delegados" )))
         elementList.append(List(title: "¿Como cambiar el tamaño, color y estilo de un texto?", viewController: AttributesMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Atributos")))
+        elementList.append(List(title: "¿Como enlistar tablas?", viewController: TablesMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Tablas")))
     }
     override init(frame: CGRect) {
         super.init(frame: frame)

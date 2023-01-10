@@ -73,6 +73,15 @@
 		CEC2FCA9296CD21A00CD09B5 /* AttributesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCA1296CD21A00CD09B5 /* AttributesInteractor.swift */; };
 		CEC2FCAA296CD21A00CD09B5 /* AttributesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCA2296CD21A00CD09B5 /* AttributesView.swift */; };
 		CEC2FCAB296CD21A00CD09B5 /* AttributesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCA3296CD21A00CD09B5 /* AttributesEntity.swift */; };
+		CEC2FCB5296CE29600CD09B5 /* TablesViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCAD296CE29600CD09B5 /* TablesViewUI.swift */; };
+		CEC2FCB6296CE29600CD09B5 /* TablesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCAE296CE29600CD09B5 /* TablesPresenter.swift */; };
+		CEC2FCB7296CE29600CD09B5 /* TablesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCAF296CE29600CD09B5 /* TablesRouter.swift */; };
+		CEC2FCB8296CE29600CD09B5 /* TablesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCB0296CE29600CD09B5 /* TablesProtocols.swift */; };
+		CEC2FCB9296CE29600CD09B5 /* TablesMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCB1296CE29600CD09B5 /* TablesMain.swift */; };
+		CEC2FCBA296CE29600CD09B5 /* TablesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCB2296CE29600CD09B5 /* TablesInteractor.swift */; };
+		CEC2FCBB296CE29600CD09B5 /* TablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCB3296CE29600CD09B5 /* TablesView.swift */; };
+		CEC2FCBC296CE29600CD09B5 /* TablesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCB4296CE29600CD09B5 /* TablesEntity.swift */; };
+		CEC2FCBE296CE4BB00CD09B5 /* exampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2FCBD296CE4BB00CD09B5 /* exampleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +153,15 @@
 		CEC2FCA1296CD21A00CD09B5 /* AttributesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesInteractor.swift; sourceTree = "<group>"; };
 		CEC2FCA2296CD21A00CD09B5 /* AttributesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesView.swift; sourceTree = "<group>"; };
 		CEC2FCA3296CD21A00CD09B5 /* AttributesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributesEntity.swift; sourceTree = "<group>"; };
+		CEC2FCAD296CE29600CD09B5 /* TablesViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesViewUI.swift; sourceTree = "<group>"; };
+		CEC2FCAE296CE29600CD09B5 /* TablesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesPresenter.swift; sourceTree = "<group>"; };
+		CEC2FCAF296CE29600CD09B5 /* TablesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesRouter.swift; sourceTree = "<group>"; };
+		CEC2FCB0296CE29600CD09B5 /* TablesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesProtocols.swift; sourceTree = "<group>"; };
+		CEC2FCB1296CE29600CD09B5 /* TablesMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesMain.swift; sourceTree = "<group>"; };
+		CEC2FCB2296CE29600CD09B5 /* TablesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesInteractor.swift; sourceTree = "<group>"; };
+		CEC2FCB3296CE29600CD09B5 /* TablesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesView.swift; sourceTree = "<group>"; };
+		CEC2FCB4296CE29600CD09B5 /* TablesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesEntity.swift; sourceTree = "<group>"; };
+		CEC2FCBD296CE4BB00CD09B5 /* exampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +236,7 @@
 				CEAA5E982968B24300049358 /* InteractiveControls */,
 				CEC2FC8A296CA6DB00CD09B5 /* Protocols */,
 				CEC2FC9B296CD1FA00CD09B5 /* Attributes */,
+				CEC2FCAC296CE26B00CD09B5 /* Tables */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,6 +346,22 @@
 			path = Attributes;
 			sourceTree = "<group>";
 		};
+		CEC2FCAC296CE26B00CD09B5 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2FCAD296CE29600CD09B5 /* TablesViewUI.swift */,
+				CEC2FCAE296CE29600CD09B5 /* TablesPresenter.swift */,
+				CEC2FCAF296CE29600CD09B5 /* TablesRouter.swift */,
+				CEC2FCB0296CE29600CD09B5 /* TablesProtocols.swift */,
+				CEC2FCB1296CE29600CD09B5 /* TablesMain.swift */,
+				CEC2FCB2296CE29600CD09B5 /* TablesInteractor.swift */,
+				CEC2FCB3296CE29600CD09B5 /* TablesView.swift */,
+				CEC2FCB4296CE29600CD09B5 /* TablesEntity.swift */,
+				CEC2FCBD296CE4BB00CD09B5 /* exampleTableViewCell.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,9 +437,13 @@
 				CEAA5E6F29687B2100049358 /* ConstrainsPresenter.swift in Sources */,
 				CEAA5E3429678B9400049358 /* HomePresenter.swift in Sources */,
 				CEAA5E642968727000049358 /* ScrollEntity.swift in Sources */,
+				CEC2FCBC296CE29600CD09B5 /* TablesEntity.swift in Sources */,
 				CEAA5E5E2968727000049358 /* ScrollPresenter.swift in Sources */,
+				CEC2FCBE296CE4BB00CD09B5 /* exampleTableViewCell.swift in Sources */,
 				CEAA5E932968849100049358 /* ControllersProtocols.swift in Sources */,
 				CEAA5E3729678B9400049358 /* HomeMain.swift in Sources */,
+				CEC2FCB9296CE29600CD09B5 /* TablesMain.swift in Sources */,
+				CEC2FCB8296CE29600CD09B5 /* TablesProtocols.swift in Sources */,
 				CEC2FC97296CA6FB00CD09B5 /* ProtocolsMain.swift in Sources */,
 				CEAA5E612968727000049358 /* ScrollMain.swift in Sources */,
 				CEC2FC94296CA6FB00CD09B5 /* ProtocolsPresenter.swift in Sources */,
@@ -414,6 +453,7 @@
 				CEAA5EB82968B30D00049358 /* InteractiveControlsEntity.swift in Sources */,
 				CEAA5E902968849100049358 /* ControllersViewUI.swift in Sources */,
 				CEC2FC95296CA6FB00CD09B5 /* ProtocolsRouter.swift in Sources */,
+				CEC2FCB5296CE29600CD09B5 /* TablesViewUI.swift in Sources */,
 				CEAA5EB32968B30D00049358 /* InteractiveControlsRouter.swift in Sources */,
 				CEAA5E3529678B9400049358 /* HomeRouter.swift in Sources */,
 				CEC2FC99296CA6FB00CD09B5 /* ProtocolsView.swift in Sources */,
@@ -425,6 +465,7 @@
 				CEC2FCAA296CD21A00CD09B5 /* AttributesView.swift in Sources */,
 				CEAA5E4E2967AAC700049358 /* AppDelegateMain.swift in Sources */,
 				CEC2FC98296CA6FB00CD09B5 /* ProtocolsInteractor.swift in Sources */,
+				CEC2FCB7296CE29600CD09B5 /* TablesRouter.swift in Sources */,
 				CEC2FC96296CA6FB00CD09B5 /* ProtocolsProtocols.swift in Sources */,
 				CEAA5E7329687B2100049358 /* ConstrainsInteractor.swift in Sources */,
 				CEAA5E622968727000049358 /* ScrollInteractor.swift in Sources */,
@@ -442,6 +483,7 @@
 				CEAA5EB62968B30D00049358 /* InteractiveControlsInteractor.swift in Sources */,
 				CEAA5E4F2967AAC700049358 /* AppDelegateInteractor.swift in Sources */,
 				CEAA5E602968727000049358 /* ScrollProtocols.swift in Sources */,
+				CEC2FCBA296CE29600CD09B5 /* TablesInteractor.swift in Sources */,
 				CEAA5E3329678B9400049358 /* HomeViewUI.swift in Sources */,
 				CEAA5E512967AAC700049358 /* AppDelegateEntity.swift in Sources */,
 				CEC2FC9A296CA6FB00CD09B5 /* ProtocolsEntity.swift in Sources */,
@@ -449,6 +491,7 @@
 				CEAA5E5F2968727000049358 /* ScrollRouter.swift in Sources */,
 				CEAA5EB52968B30D00049358 /* InteractiveControlsMain.swift in Sources */,
 				CEAA5E962968849100049358 /* ControllersView.swift in Sources */,
+				CEC2FCBB296CE29600CD09B5 /* TablesView.swift in Sources */,
 				CEC2FCA6296CD21A00CD09B5 /* AttributesRouter.swift in Sources */,
 				CEAA5E972968849100049358 /* ControllersEntity.swift in Sources */,
 				CEAA5E912968849100049358 /* ControllersPresenter.swift in Sources */,
@@ -461,6 +504,7 @@
 				CEAA5E4B2967AAC700049358 /* AppDelegatePresenter.swift in Sources */,
 				CEAA5E502967AAC700049358 /* AppDelegateView.swift in Sources */,
 				CEAA5E4C2967AAC700049358 /* AppDelegateRouter.swift in Sources */,
+				CEC2FCB6296CE29600CD09B5 /* TablesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
