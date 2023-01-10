@@ -17,6 +17,14 @@ class AttributesViewUI: UIView{
     var navigationController: UINavigationController?
     
     
+    private lazy var scrollView: UIScrollView = {
+        let view = UIScrollView()
+        view.backgroundColor = UIColor.clear
+        view.showsHorizontalScrollIndicator = false
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private lazy var infoLabel0: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -108,6 +116,31 @@ class AttributesViewUI: UIView{
         return label
     }()
     
+    private lazy var infoLabel8: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.text = "label.backgroundColor = .gray"
+        label.font = .systemFont(ofSize: 20)
+        label.backgroundColor = .gray
+        label.numberOfLines = 0
+        label.textColor = .brown
+        return label
+    }()
+    private lazy var infoLabel9: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textAlignment = .center
+        label.text = "label.layer.cornerRadius = 10 \nlabel.clipsToBounds = true"
+        label.layer.cornerRadius = 10
+        label.clipsToBounds = true
+        label.font = .systemFont(ofSize: 20)
+        label.backgroundColor = .gray
+        label.numberOfLines = 0
+        label.textColor = .brown
+        return label
+    }()
+    
     public convenience init(
         navigation: UINavigationController,
         delegate: AttributesViewUIDelegate){
@@ -129,49 +162,67 @@ class AttributesViewUI: UIView{
     
     func setUI(){
         self.backgroundColor = .white
-        self.addSubview(infoLabel0)
-        self.addSubview(infoLabel1)
-        self.addSubview(infoLabel2)
-        self.addSubview(infoLabel3)
-        self.addSubview(infoLabel4)
-        self.addSubview(infoLabel5)
-        self.addSubview(infoLabel6)
-        self.addSubview(infoLabel7)
+        self.addSubview(scrollView)
+        scrollView.addSubview(infoLabel0)
+        scrollView.addSubview(infoLabel1)
+        scrollView.addSubview(infoLabel2)
+        scrollView.addSubview(infoLabel3)
+        scrollView.addSubview(infoLabel4)
+        scrollView.addSubview(infoLabel5)
+        scrollView.addSubview(infoLabel8)
+        scrollView.addSubview(infoLabel9)
+        scrollView.addSubview(infoLabel6)
+        scrollView.addSubview(infoLabel7)
     }
     
     func setConstraints(){
         NSLayoutConstraint.activate([
-            infoLabel0.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
-            infoLabel0.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel0.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            scrollView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20),
+            
+            infoLabel0.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 20),
+            infoLabel0.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel0.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
+            infoLabel0.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
             
             infoLabel1.topAnchor.constraint(equalTo: infoLabel0.bottomAnchor, constant: 20),
-            infoLabel1.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel1.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            infoLabel1.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel1.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
             infoLabel2.topAnchor.constraint(equalTo: infoLabel1.bottomAnchor, constant: 20),
-            infoLabel2.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel2.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            infoLabel2.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel2.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
             infoLabel3.topAnchor.constraint(equalTo: infoLabel2.bottomAnchor, constant: 20),
-            infoLabel3.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel3.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            infoLabel3.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel3.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
             infoLabel4.topAnchor.constraint(equalTo: infoLabel3.bottomAnchor, constant: 20),
-            infoLabel4.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel4.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            infoLabel4.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel4.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
             infoLabel5.topAnchor.constraint(equalTo: infoLabel4.bottomAnchor, constant: 20),
-            infoLabel5.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel5.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            infoLabel5.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel5.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
-            infoLabel6.topAnchor.constraint(equalTo: infoLabel5.bottomAnchor, constant: 20),
-            infoLabel6.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel6.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            infoLabel8.topAnchor.constraint(equalTo: infoLabel5.bottomAnchor, constant: 20),
+            infoLabel8.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel8.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
+            
+            infoLabel9.topAnchor.constraint(equalTo: infoLabel8.bottomAnchor, constant: 20),
+            infoLabel9.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel9.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
+            
+            infoLabel6.topAnchor.constraint(equalTo: infoLabel9.bottomAnchor, constant: 20),
+            infoLabel6.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel6.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
             
             infoLabel7.topAnchor.constraint(equalTo: infoLabel6.bottomAnchor, constant: 20),
-            infoLabel7.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            infoLabel7.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            infoLabel7.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
+            infoLabel7.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -20),
+            infoLabel7.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -20),
         ])
     }
 }
