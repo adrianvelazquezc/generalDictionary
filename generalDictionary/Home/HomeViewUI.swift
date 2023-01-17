@@ -60,7 +60,8 @@ class HomeViewUI: UIView{
         elementList.append(List(title: "¿Como cambiar el tamaño, color y estilo de un texto?", viewController: AttributesMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Atributos")))
         elementList.append(List(title: "¿Como enlistar tablas?", viewController: TablesMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Tablas")))
         elementList.append(List(title: "¿Que otras tablas hay?", viewController: CollectionsMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "CollectionViews")))
-        elementList.append(List(title: "Consumo de Api", viewController: APISMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Ejemplo de una API")))
+        elementList.append(List(title: "¿Consumo de Api", viewController: APISMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Ejemplo de una API")))
+        elementList.append(List(title: "¿Como se guarda la informacion localmente?", viewController: SavedInfoMain.createModule(navigation: (self.navigationController ?? UINavigationController()), vcTitle: "Persistencia de datos")))
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
