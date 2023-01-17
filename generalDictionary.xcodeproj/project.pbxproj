@@ -264,7 +264,6 @@
 				CEAA5E2A29678B6D00049358 /* Home */,
 				CEAA5E402967AA9800049358 /* Views */,
 				CEE19C6929761124002EB462 /* APIS */,
-				CEDB51CB2977314000CE1A13 /* SecondApi */,
 				CEAA5E16296780F000049358 /* AppDelegate.swift */,
 				CEAA5E1F296780F300049358 /* Assets.xcassets */,
 				CEAA5E21296780F300049358 /* LaunchScreen.storyboard */,
@@ -489,6 +488,7 @@
 				CEE19C6F2976115C002EB462 /* APISInteractor.swift */,
 				CEE19C702976115C002EB462 /* APISView.swift */,
 				CEE19C712976115C002EB462 /* APISEntity.swift */,
+				CEDB51CB2977314000CE1A13 /* SecondApi */,
 			);
 			path = APIS;
 			sourceTree = "<group>";
