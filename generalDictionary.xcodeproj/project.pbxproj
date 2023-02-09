@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4C2027299598BB00A4C415 /* SDKgenerateXCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C20222995977300A4C415 /* SDKgenerateXCFramework.xcframework */; };
+		CE4C2028299598BB00A4C415 /* SDKgenerateXCFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C20222995977300A4C415 /* SDKgenerateXCFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEAA5E17296780F000049358 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA5E16296780F000049358 /* AppDelegate.swift */; };
 		CEAA5E20296780F300049358 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAA5E1F296780F300049358 /* Assets.xcassets */; };
 		CEAA5E23296780F300049358 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAA5E21296780F300049358 /* LaunchScreen.storyboard */; };
@@ -141,7 +143,22 @@
 		CEE19C792976115C002EB462 /* APISEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE19C712976115C002EB462 /* APISEntity.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE4C2029299598BB00A4C415 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE4C2028299598BB00A4C415 /* SDKgenerateXCFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CE4C20222995977300A4C415 /* SDKgenerateXCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SDKgenerateXCFramework.xcframework; sourceTree = "<group>"; };
 		CEAA5E13296780F000049358 /* generalDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = generalDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAA5E16296780F000049358 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAA5E1F296780F300049358 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -283,6 +300,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4C2027299598BB00A4C415 /* SDKgenerateXCFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,11 +326,11 @@
 		CEAA5E15296780F000049358 /* generalDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				CEAA5E3D2967A84E00049358 /* Components */,
 				CEAA5E2A29678B6D00049358 /* Home */,
 				CEAA5E402967AA9800049358 /* Views */,
 				CEE19C6929761124002EB462 /* APIS */,
 				CEAA5E16296780F000049358 /* AppDelegate.swift */,
+				CE4C20222995977300A4C415 /* SDKgenerateXCFramework.xcframework */,
 				CEAA5E1F296780F300049358 /* Assets.xcassets */,
 				CEAA5E21296780F300049358 /* LaunchScreen.storyboard */,
 				CEAA5E24296780F300049358 /* Info.plist */,
@@ -332,13 +350,6 @@
 				CEAA5E3B29678E0500049358 /* MainListTableViewCell.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		CEAA5E3D2967A84E00049358 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		CEAA5E402967AA9800049358 /* Views */ = {
@@ -599,6 +610,7 @@
 				CEAA5E0F296780F000049358 /* Sources */,
 				CEAA5E10296780F000049358 /* Frameworks */,
 				CEAA5E11296780F000049358 /* Resources */,
+				CE4C2029299598BB00A4C415 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

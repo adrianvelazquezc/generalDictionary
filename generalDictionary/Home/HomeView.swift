@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import frameworkName
 
 class HomeView: UIViewController {
     var presenter: HomePresenterProtocol?
@@ -45,7 +46,12 @@ extension HomeView: HomeViewProtocol {
 
 extension HomeView: HomeViewUIDelegate {
     func gotoView(view: List) {
-        self.presenter?.requestNextView(view: view)
+        if view.title == "Frameworks" {
+            let sdkView = MyScreenTest()
+            self.present(sdkView, animated: true)
+        } else {
+            self.presenter?.requestNextView(view: view)
+        }
     }
     
     
